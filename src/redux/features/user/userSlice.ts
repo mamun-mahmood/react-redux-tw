@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-interface IUserState {
+export interface IUserState {
   id: number;
   name: string;
   email: string;
-  firstName: string;
-  lastName: string;
+  first_name: string;
+  last_name: string;
   avatar: string;
 }
 
@@ -13,8 +13,8 @@ const initialState: IUserState = {
   id: 0,
   name: "John Doe",
   email: "",
-  firstName: "",
-  lastName: "",
+  first_name: "",
+  last_name: "",
   avatar: "",
 };
 
@@ -27,16 +27,16 @@ export const userSlice = createSlice({
       state.id = id;
       state.name = name;
       state.email = email;
-      state.firstName = first_name;
-      state.lastName = last_name;
+      state.first_name = first_name;
+      state.last_name = last_name;
       state.avatar = avatar;
     },
     clearUser: (state) => {
       state.id = 0;
       state.name = "";
       state.email = "";
-      state.firstName = "";
-      state.lastName = "";
+      state.first_name = "";
+      state.last_name = "";
       state.avatar = "";
     },
   },

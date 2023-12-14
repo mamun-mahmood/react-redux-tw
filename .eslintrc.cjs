@@ -14,5 +14,9 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // unknown/any type rule
+    '@typescript-eslint/no-explicit-any': 'off',
+    // unknown/any type rule
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
 }
